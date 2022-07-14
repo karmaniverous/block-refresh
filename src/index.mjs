@@ -1,1 +1,1 @@
-export { default as foo } from './foo.mjs';
+export { default as blockRefresh } from './blockRefresh.mjs';

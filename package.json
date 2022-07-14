@@ -40,5 +40,8 @@
       "@babel/register"
     ],
     "spec": "./{,!(node_modules)/**}/*.test.*js*"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

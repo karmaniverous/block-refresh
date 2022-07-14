@@ -1,6 +1,5 @@
-# blockRefresh
+import _ from 'lodash';
 
-```
 /**
  * Use as the equalityFn argument to Redux useSelector() when the selected
  * value is an Object. https://react-redux.js.org/api/hooks#useselector
@@ -28,4 +27,19 @@
  *   comparison values are undefined.
  * @returns {boolean} If true, component will not refresh.
  */
-```
+const blockRefresh = (a, b, options = {}) => {
+  const { path, log, refreshUndefined } = options;
+
+  const aComp = path ? _.get(a, path) : a;
+  const bComp = path ? _.get(b, path) : b;
+
+  const result =
+    (aComp !== undefined && bComp !== undefined && _.isEqual(aComp, bComp)) ||
+    (aComp === undefined && bComp === undefined && !refreshUndefined);
+
+  if (!result && log) console.log(log, { a: aComp, b: bComp });
+
+  return result;
+};
+
+export default blockRefresh;
