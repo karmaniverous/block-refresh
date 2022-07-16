@@ -46,5 +46,14 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "release-it": {
+    "github": {
+      "release": true,
+      "update": true
+    },
+    "npm": {
+      "publish": true
+    }
   }
 }
