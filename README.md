@@ -19,11 +19,14 @@
  * @param {*} b - Last useSelector result.
  * @param {Object} options - Options object with the following properties, all
  * optional:
+ * - log <string>: If defined, function will console log a & b values with log
+ *   value as label when refresh is blocked.
  * - path <string>: A Lodash-style path into the selected object. If defined,
  *   the equality test will be restricted to that path. Useful when an object
  *   has an update timestamp.
- * - log <string>: If defined, function will console log a & b values with log
- *   value as label.
+ * - predicate <func>: Predicate function takes (a, b) as arguments & returns
+ *   true if refresh should be blocked. If predicate is populated, path &
+ *   refreshUndefined are ignored.
  * - refreshUndefined <bool> - If true, component will refresh when both
  *   comparison values are undefined.
  * @returns {boolean} If true, component will not refresh.

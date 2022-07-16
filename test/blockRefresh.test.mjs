@@ -39,6 +39,20 @@ describe('blockRefresh', () => {
     });
   });
 
+  describe('predicate option', () => {
+    it('blocks objects when predicate true', () => {
+      const output = blockRefresh(x, y, { predicate: (a, b) => a.a === b.a });
+
+      output.should.equal(true);
+    });
+
+    it('passes objects when predicate false', () => {
+      const output = blockRefresh(x, y, { predicate: (a, b) => a.b === b.b });
+
+      output.should.equal(false);
+    });
+  });
+
   describe('refreshUndefined option', () => {
     it('blocks undefined inputs by default', () => {
       const output = blockRefresh(undefined, undefined);
