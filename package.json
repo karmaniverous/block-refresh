@@ -1,6 +1,6 @@
 {
   "name": "@karmaniverous/block-refresh",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Use as the equalityFn argument to Redux useSelector() when the selected value is an Object.",
   "main": "lib/index.js",
   "scripts": {
