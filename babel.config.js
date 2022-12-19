@@ -9,8 +9,7 @@ module.exports = (api) => {
   api.cache.never();
 
   return {
-    // presets: ['@babel/preset-env', 'minify'],
-    presets: ['@babel/preset-env'],
+    presets: ['@babel/preset-env', 'minify'],
     plugins: [
       '@babel/plugin-syntax-import-assertions',
       'lodash',
