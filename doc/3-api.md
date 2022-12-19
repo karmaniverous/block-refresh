@@ -1,8 +1,3 @@
-# block-refresh
-
-See [tests](/src/export/blockRefresh/blockRefresh.test.mjs) for examples of
-usage!
-
 # API Documentation
 
 ```js
@@ -61,8 +56,3 @@ Use as the equalityFn argument to Redux useSelector() when the selectedvalue is
 | [a] | <code>any</code> | 
 | [b] | <code>any</code> | 
 
-
----
-
-See more great templates and other tools on
-[my GitHub Profile](https://github.com/karmaniverous)!
