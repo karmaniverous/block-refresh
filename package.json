@@ -1,6 +1,6 @@
 {
   "name": "@karmaniverous/block-refresh",
-  "version": "1.0.0-2",
+  "version": "1.0.0-3",
   "publishConfig": {
     "access": "public"
   },
