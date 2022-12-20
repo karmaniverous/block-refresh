@@ -1,3 +1,1 @@
-import blockRefresh from './blockRefresh/blockRefresh.mjs';
-
-export default blockRefresh;
+export { blockRefresh } from './blockRefresh/blockRefresh.mjs';

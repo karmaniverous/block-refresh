@@ -10,6 +10,19 @@ module.exports = (api) => {
 
   return {
     presets: ['@babel/preset-env'],
-    plugins: [['module-extension', { mjs: '' }]],
+    plugins: [
+      '@babel/plugin-syntax-import-assertions',
+      'lodash',
+      ['module-extension', { mjs: '' }],
+      [
+        'transform-inline-environment-variables',
+        {
+          // Any environment variables you add to this array will be replaced
+          // with string literals of their values at build time.
+          include: ['NODE_PACKAGE_VERSION'],
+        },
+      ],
+    ],
+    targets: { node: 'current' },
   };
 };

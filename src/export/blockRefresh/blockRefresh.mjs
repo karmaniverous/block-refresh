@@ -31,14 +31,14 @@ import _ from 'lodash';
  *
  * @example
  * // Passed as a function, it will block component refresh if the current &
- * // previous values are defined & pass _.isEqual, for example:
+ * // previous values are defined & pass _.isEqual.
  * const obj = useSelector((state) => state.slice.obj, blockRefresh);
  *
  * @example
- * // Deploy as an anonymousfunction to set options, for example:
+ * // Deploy as an anonymousfunction to set options.
  * const obj = useSelector((state) => state.slice.obj, (a, b) => blockRefresh(a, b, options));
  */
-const blockRefresh = (a, b, options = {}) => {
+export const blockRefresh = (a, b, options = {}) => {
   const { log, path, predicate, refreshUndefined } = options;
 
   let result;
@@ -56,5 +56,3 @@ const blockRefresh = (a, b, options = {}) => {
 
   return result;
 };
-
-export default blockRefresh;

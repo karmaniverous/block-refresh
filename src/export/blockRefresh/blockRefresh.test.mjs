@@ -5,7 +5,7 @@ import chai from 'chai';
 chai.should();
 
 // subject imports
-import blockRefresh from './blockRefresh.mjs';
+import { blockRefresh } from './blockRefresh.mjs';
 
 const x = { a: 0, b: 1 };
 const y = { a: 0, b: 2 };

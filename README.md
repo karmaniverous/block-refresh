@@ -45,11 +45,11 @@ Use as the equalityFn argument to Redux useSelector() when the selectedvalue is
 
 **Example**  
 ```js
-// Passed as a function, it will block component refresh if the current &// previous values are defined & pass _.isEqual, for example:const obj = useSelector((state) => state.slice.obj, blockRefresh);
+// Passed as a function, it will block component refresh if the current &// previous values are defined & pass _.isEqual.const obj = useSelector((state) => state.slice.obj, blockRefresh);
 ```
 **Example**  
 ```js
-// Deploy as an anonymousfunction to set options, for example:const obj = useSelector((state) => state.slice.obj, (a, b) => blockRefresh(a, b, options));
+// Deploy as an anonymousfunction to set options.const obj = useSelector((state) => state.slice.obj, (a, b) => blockRefresh(a, b, options));
 ```
 <a name="EqalityFn"></a>
 
