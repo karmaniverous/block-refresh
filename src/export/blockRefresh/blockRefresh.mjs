@@ -1,9 +1,13 @@
 import _ from 'lodash';
 
 /**
+ * Return true if the two inputs should be considered equal.
+ *
  * @callback EqalityFn
+ *
  * @param {any} [a]
  * @param {any} [b]
+ *
  * @returns {boolean}
  */
 

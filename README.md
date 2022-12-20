@@ -22,7 +22,8 @@ value is an Object. <a href="https://react-redux.js.org/api/hooks#useselector">h
 
 <dl>
 <dt><a href="#EqalityFn">EqalityFn</a> ⇒ <code>boolean</code></dt>
-<dd></dd>
+<dd><p>Return true if the two inputs should be considered equal.</p>
+</dd>
 </dl>
 
 <a name="blockRefresh"></a>
@@ -54,6 +55,8 @@ Use as the equalityFn argument to Redux useSelector() when the selectedvalue is
 <a name="EqalityFn"></a>
 
 ## EqalityFn ⇒ <code>boolean</code>
+Return true if the two inputs should be considered equal.
+
 **Kind**: global typedef  
 
 | Param | Type |
