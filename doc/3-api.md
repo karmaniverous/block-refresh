@@ -1,7 +1,7 @@
 # API Documentation
 
 ```js
-import blockRefresh from '@karmaniverous/block-refresh`;
+import { blockRefresh } from '@karmaniverous/block-refresh`;
 ```
 
 ## Functions
