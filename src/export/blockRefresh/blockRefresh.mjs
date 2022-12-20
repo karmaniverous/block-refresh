@@ -39,8 +39,11 @@ import _ from 'lodash';
  * const obj = useSelector((state) => state.slice.obj, blockRefresh);
  *
  * @example
- * // Deploy as an anonymousfunction to set options.
- * const obj = useSelector((state) => state.slice.obj, (a, b) => blockRefresh(a, b, options));
+ * // Deploy as an anonymous function to set options.
+ * const obj = useSelector(
+ *   (state) => state.slice.obj,
+ *   (a, b) => blockRefresh(a, b, options)
+ * );
  */
 export const blockRefresh = (a, b, options = {}) => {
   const { log, path, predicate, refreshUndefined } = options;
