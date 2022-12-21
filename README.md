@@ -5,7 +5,7 @@ Use as the equalityFn argument to Redux
 selected value is an Object.
 
 See
-[tests](https://github.com/karmaniverous/block-refresh/blob/main/src/export/blockRefresh/blockRefresh.test.mjs)
+[tests](https://github.com/karmaniverous/block-refresh/blob/main/lib/blockRefresh/blockRefresh.test.js)
 for examples of usage!
 
 # API Documentation
