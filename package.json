@@ -15,7 +15,9 @@
   "description": "Use as the equalityFn argument to Redux useSelector() when the selected value is an Object.",
   "homepage": "https://github.com/karmaniverous/block-refresh#readme",
   "keywords": [
-    "redux"
+    "react",
+    "redux",
+    "useselecor"
   ],
   "license": "BSD-3-Clause",
   "dependencies": {
