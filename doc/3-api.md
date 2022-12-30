@@ -4,13 +4,6 @@
 import { blockRefresh, PACKAGE_INFO } from '@karmaniverous/block-refresh`;
 ```
 
-## Constants
-
-<dl>
-<dt><a href="#PACKAGE_INFO">PACKAGE_INFO</a> : <code><a href="#PackageInfo">PackageInfo</a></code></dt>
-<dd></dd>
-</dl>
-
 ## Functions
 
 <dl>
@@ -26,14 +19,8 @@ value is an Object. <a href="https://react-redux.js.org/api/hooks#useselector">h
 <dt><a href="#EqalityFn">EqalityFn</a> ⇒ <code>boolean</code></dt>
 <dd><p>Return true if the two inputs should be considered equal.</p>
 </dd>
-<dt><a href="#PackageInfo">PackageInfo</a> : <code>Object</code></dt>
-<dd></dd>
 </dl>
 
-<a name="PACKAGE_INFO"></a>
-
-## PACKAGE\_INFO : [<code>PackageInfo</code>](#PackageInfo)
-**Kind**: global constant  
 <a name="blockRefresh"></a>
 
 ## blockRefresh([a], [b], [options]) ⇒ <code>boolean</code>
@@ -71,14 +58,4 @@ Return true if the two inputs should be considered equal.
 | --- | --- |
 | [a] | <code>any</code> | 
 | [b] | <code>any</code> | 
-
-<a name="PackageInfo"></a>
-
-## PackageInfo : <code>Object</code>
-**Kind**: global typedef  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| version | <code>string</code> | package version |
 
